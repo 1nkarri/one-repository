@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+  <h1>Calcular IMC</h1>
+</body>
+<script>
+  function saltarLinea() {
+    document.write("<br>");
+    document.write("<br>");
+    document.write("<br>");
+  }
+
+  function imprimir(phrase) {
+    document.write(phrase);
+    saltarLinea();
+  }
+
+  function calcularImc(weight,height,name){
+    imc = weight / (height ** 2);
+    imprimir("El IMC calculado de " + name + " es: " + imc)
+  }
+
+  calcularImc(64,1.65,"Jhanpiere");
+
+</script>
+</html>
